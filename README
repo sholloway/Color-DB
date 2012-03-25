@@ -1,0 +1,40 @@
+######################################################################################################################
+Project: Color DB
+Summary:
+The amazing NodeBox Color(http://nodebox.net/code/index.php/Colors#theme) by Tom De Smedt and Frederik De Bleser
+library is incredibly useful, but limited in that it's implemented in Python. This project is a port of the 
+Hue, Shader and Theme definitions to a collection of DB scripts that can be used in a general database. Also, there 
+is an Excel representation of the values.
+
+Author: Samuel Holloway
+URL: https://github.com/sholloway/Color-DB
+Source: https://github.com/sholloway/Color-DB.git
+Contact: sholloway@gmail.com
+Twitter: @sholloway
+######################################################################################################################
+BUILD REQUIREMENTS:
+Ruby 1.8.7 or higher
+RubyGems
+roo gem
+SQLite3
+######################################################################################################################
+RUNTIME REQUIREMENTS:
+I've tested this on OS X Lion.
+######################################################################################################################
+Build Instructions:
+In the root directory of the project simply run the command: 
+> rake
+This should create a directory named "output" which contains the sql file. You can then create an sqlite3 database of
+your specifications by running the command:
+> sqlite3 your_db_name < create_colors_db.sql
+
+######################################################################################################################
+License:
+Open Source -The MIT License
+Please use at your own discretion. Drop me a line if you find the program useful. 
+######################################################################################################################
+Copyright (C) 2011-2012 Samuel Holloway. All rights reserved.
+######################################################################################################################
+Status: Ready for use
+Version 0.0.1 - 3.25.2012
+----------------------------------------------------------------------------------------------------------------------
